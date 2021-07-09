@@ -299,23 +299,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2114197071 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2999774217143504240, guid: 1315953d79396a74eab05b7edb41aba7, type: 3}
-  m_PrefabInstance: {fileID: 5425057133341432355}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2114197072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2114197071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 034e330c7e9d3f54083fa6748a355908, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2261992347309240012
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -382,11 +365,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2999774217143504240, guid: 1315953d79396a74eab05b7edb41aba7, type: 3}
       propertyPath: m_Name
-      value: Rocket
-      objectReference: {fileID: 0}
-    - target: {fileID: 2999774217143504240, guid: 1315953d79396a74eab05b7edb41aba7, type: 3}
-      propertyPath: m_TagString
-      value: Player
+      value: Robot
       objectReference: {fileID: 0}
     - target: {fileID: 6823881946198357788, guid: 1315953d79396a74eab05b7edb41aba7, type: 3}
       propertyPath: m_RootOrder
@@ -398,7 +377,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6823881946198357788, guid: 1315953d79396a74eab05b7edb41aba7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.0600004
+      value: 2.5600004
       objectReference: {fileID: 0}
     - target: {fileID: 6823881946198357788, guid: 1315953d79396a74eab05b7edb41aba7, type: 3}
       propertyPath: m_LocalPosition.z
