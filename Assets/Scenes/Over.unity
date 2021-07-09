@@ -363,10 +363,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2114197072, guid: 1315953d79396a74eab05b7edb41aba7, type: 3}
+      propertyPath: mainEngine
+      value: 
+      objectReference: {fileID: 8300000, guid: 523fb06b0016d3340b9f534b85eaa8d9, type: 3}
     - target: {fileID: 2999774217143504240, guid: 1315953d79396a74eab05b7edb41aba7, type: 3}
       propertyPath: m_Name
       value: Rocket
       objectReference: {fileID: 0}
+    - target: {fileID: 4068077192073932411, guid: 1315953d79396a74eab05b7edb41aba7, type: 3}
+      propertyPath: crashSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 2968113451b80f14b89a3a0f903d8512, type: 3}
+    - target: {fileID: 4068077192073932411, guid: 1315953d79396a74eab05b7edb41aba7, type: 3}
+      propertyPath: successSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: e915dfbfbf321204e8ec523cf0053ce6, type: 3}
     - target: {fileID: 6823881946198357788, guid: 1315953d79396a74eab05b7edb41aba7, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -410,6 +422,10 @@ PrefabInstance:
     - target: {fileID: 6823881946198357788, guid: 1315953d79396a74eab05b7edb41aba7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7070336141223622465, guid: 1315953d79396a74eab05b7edb41aba7, type: 3}
+      propertyPath: m_audioClip
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1315953d79396a74eab05b7edb41aba7, type: 3}
