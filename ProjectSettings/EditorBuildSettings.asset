@@ -7,8 +7,17 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/Over.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    guid: b531a9c3f9672154c955047dfa7f7910
   - enabled: 1
     path: Assets/Scenes/Under.unity
-    guid: 383633d37fd99a949bad8b3ec47a9981
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Eye of the Needle.unity
+    guid: eebb5c1b65d16ef45adb35ce67de6a35
+  - enabled: 1
+    path: Assets/Scenes/Straight Shot.unity
+    guid: e4d4daa7c4fa53440944988bbc2ddaa1
+  - enabled: 1
+    path: Assets/Scenes/Goal.unity
+    guid: 02da214dd4ddfe34594782670178e11f
   m_configObjects: {}

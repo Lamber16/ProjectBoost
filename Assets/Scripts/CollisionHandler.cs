@@ -6,13 +6,18 @@ public class CollisionHandler : MonoBehaviour
 
     [SerializeField] float crashDelay = 1f;
     [SerializeField] float levelLoadDelay = 1f;
+
     [SerializeField] AudioClip crashSFX;
     [SerializeField] AudioClip successSFX;
+
+    [SerializeField] ParticleSystem crashParticles;
+    [SerializeField] ParticleSystem successParticles;
     
     Movement movement;
     AudioSource audioSource;
 
     bool isTransitioning = false;
+    bool collisionDisabled = false;
 
     private void Start() 
     {
@@ -22,7 +27,7 @@ public class CollisionHandler : MonoBehaviour
 
     private void OnCollisionEnter(Collision other) {
         {
-            if (isTransitioning){return;}
+            if (isTransitioning || collisionDisabled){return;}
 
             switch(other.gameObject.tag)
             {
@@ -44,6 +49,7 @@ public class CollisionHandler : MonoBehaviour
         movement.enabled = false;
         audioSource.Stop();
         audioSource.PlayOneShot(crashSFX);
+        crashParticles.Play();
         Invoke("ReloadLevel", crashDelay);
     }
 
@@ -59,6 +65,7 @@ public class CollisionHandler : MonoBehaviour
         movement.enabled = false;
         audioSource.Stop();
         audioSource.PlayOneShot(successSFX);
+        successParticles.Play();
         Invoke("LoadNextLevel", levelLoadDelay);
     }
 
@@ -71,5 +78,10 @@ public class CollisionHandler : MonoBehaviour
             nextSceneIndex = 0;
         }
         SceneManager.LoadScene(nextSceneIndex);
+    }
+
+    public void ToggleCollision()
+    {
+        collisionDisabled = !collisionDisabled;
     }
 }
